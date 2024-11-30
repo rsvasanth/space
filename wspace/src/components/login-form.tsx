@@ -1,4 +1,3 @@
-import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -34,9 +33,9 @@ export function LoginForm() {
           <div className="grid gap-2">
             <div className="flex items-center">
               <Label htmlFor="password">Password</Label>
-              <Link href="#" className="ml-auto inline-block text-sm underline">
+              <a href="#" className="ml-auto inline-block text-sm underline">
                 Forgot your password?
-              </Link>
+              </a>
             </div>
             <Input id="password" type="password" required />
           </div>
@@ -49,9 +48,9 @@ export function LoginForm() {
         </div>
         <div className="mt-4 text-center text-sm">
           Don&apos;t have an account?{" "}
-          <Link href="#" className="underline">
+          <a href="#" className="underline">
             Sign up
-          </Link>
+          </a>
         </div>
       </CardContent>
     </Card>
